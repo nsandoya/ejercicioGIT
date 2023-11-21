@@ -4,71 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Home | UNIQLUXURY Encuentre propiedades de lujo alrededor del mundo | Uniq</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            height: 100vh;
+            background-image: url("./IMG/mikail-mcverry.png");
+            background-size: cover;
+            background-position: center;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 5fr 5fr;
+        }
+        .navbar{
+            /*display: flex;
+            flex-direction: row;*/
+            display: grid;
+            grid-template-columns: 5fr 1fr 1fr 1fr;
+
+            border-bottom: 1px solid whitesmoke;
+        }
+        .hdr-search-bar{
+            justify-self: end;
+        }
+
+        .hdr-title{
+            align-self: start;
+        }
+
+        .prop-gallery{
+            display: grid;
+            height: 50vh;
+            grid-template-columns: 1fr 1fr;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            overflow: hidden;
+        }
+        .gallery-img{
+            width: 250px;
+            height: 350px;
+            background-image: url("./IMG/daniel-barnes.png");
+            background-size:cover;
+            background-position: center;
+        }
+        .gallery-title{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            max-height: 50vh;
+        }
+        .g-title{
+            justify-self: center;
+            margin: 3rem;
+        }
+        .g-buttons{
+            justify-self: center;
+            align-self: end;
+            margin-bottom: 3rem;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div>
                 <!-- Icono -->
+                <img src="./IMG/uniqluxury_logo.png" alt="uniqluxury_logo">
             </div>
-            <div>
                 <!-- Opciones -->
-                <div>
+            <div>
                     <!-- display:inline-block -->
-                    <span>Login</span>
-                    <span>|</span>
-                    <span>Sing Up</span>
-                </div>
-                <div>
-                    <!-- display:inline-block -->
-                    <span>ESP</span>
-                    <span>ENG</span>
-                </div>
+                <span>Login</span>
+                <span>|</span>
+                <span>Sing Up</span>
             </div>
             <div>
-                <!-- Menú lateral -->
+                <!-- display:inline-block -->
+                <span>ESP</span>
+                <span>ENG</span>
             </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 50 50">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                    </svg>
+            </div>
+                <!-- Menú lateral -->
         </nav>
+            <!-- Portada -->
+        <div class="hdr-search-bar">
+        <!-- Barra de búsqueda -->
+            <input type="text" placeholder="Ex. Villa Budapest">
+            <input type="submit">
+        </div>
+        <div class="hdr-title">
+        <!-- Título -->
+            <h3>Luxury</h3>
+            <h1>Real-Estate</h1>
+            <button>View  all properties</button>
+        </div>
     </header>
 
     <main>
         <section>
-            <!-- Portada -->
-            <div>
-                <!-- Barra de búsqueda -->
-                <input type="text" placeholder="Ex. Villa Budapest">
-                <input type="submit">
-            </div>
-            <div>
-                <!-- Título -->
-                <h3>Luxury</h3>
-                <h1>Real-Estate</h1>
-                <button>View  all properties</button>
-            </div>
-        </section>
-        <section>
             <!-- Properties for sale -->
-            <div>
-                <div> <!-- Galería -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="prop-gallery">
+                <div class="gallery"> <!-- Galería -->
+                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img">Glasgow</div>
+                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img">Marselles</div>
                 </div>
-                <div>
-                    <h3>Worldwide gallery</h3>
-                    <h2>Properties for sale</h2>
+                <div class="gallery-title">
+                    <div class="g-title">
+                        <h3>Worldwide gallery</h3>
+                        <h2>Properties for sale</h2>
+                    </div>
+                    <div class="g-buttons">
+                        <button>Previous</button>
+                        <button>View all properties</button>
+                        <button>Next</button>
+                    </div>
                 </div>
             </div>
             <!-- Properties for rent -->
-            <div>
-                <div> <!-- Galería -->
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="prop-gallery">
+                <div class="gallery-title">
+                    <div class="g-title">
+                        <h3>Worldwide gallery</h3>
+                        <h2>Properties for sale</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam delectus asperiores architecto! Dolor, inventore distinctio.</p>
+                    </div>
+                    <div class="g-buttons">
+                        <button>Previous</button>
+                        <button>View all properties</button>
+                        <button>Next</button>
+                    </div>
                 </div>
-                <div>
-                    <h3>Worldwide gallery</h3>
-                    <h2>Properties for rent</h2>
+                <div class="gallery"> <!-- Galería -->
+                    <div class="gallery-img">Carcassone</div>
+                    <div class="gallery-img">Munich</div>
+                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img">Marselles</div>
                 </div>
             </div>
         </section>
