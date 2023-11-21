@@ -110,6 +110,96 @@
         .g-devs-title h3{
             font-size: 1.2rem;
         }
+
+        .int-des{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            margin: 0 4rem;
+            margin-top: 4rem;
+
+            align-items: center;
+        }
+
+        .intdes-bg-img{
+            width: 450px;
+            height: 600px;
+            background-color: #26282B;
+        }
+        .intdes-img{
+            width: 450px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+
+            position: relative;
+            left: 100px;
+            top: 75px;
+        }
+
+        .join{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            background-color: #26282B;
+            margin: 0 4rem;
+            padding: 3rem;
+
+            align-items: center;
+            position: relative;
+            top: 60px;
+        }
+
+        .join-contact{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .join-contact > input[submit]{
+            width: 50px;
+            align-self: end;
+        }
+
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            height: 40vh;
+
+            align-items: end;
+            justify-items: center;
+            padding: 0 3rem;
+
+            background-color: black;
+            line-height: 1.5rem;
+        }
+
+        footer img{
+            margin: 2rem 0;
+        }
+
+        footer h4, span{
+            color: whitesmoke;
+        }
+
+        .footer-div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .copyright{
+            display: grid;
+            background-color: black;
+            border-top: 1px solid whitesmoke;
+            padding: 0.8rem 0;;
+        }
+
+        .copyright span{
+            justify-self: center;
+            color: whitesmoke;
+        }
+
     </style>
 </head>
 <body>
@@ -269,29 +359,35 @@
 
         <section>
             <!-- Art curation -->
-            <div>
+            <div class="int-des">
                 <!-- Foto + fondo -->
-            </div>
-            <div>
-                <div><!-- Adorno --></div>
-                <h3>Services</h3>
-                <h2>Art Curation & Interior Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, maxime illo ea adipisci modi debitis.</p>
+                <div class="intdes-bg-img">
+                    <div class="intdes-img" style="background-image: url('./IMG/interior_design.jpg');"></div>
+                </div>
                 <div>
-                    <button>Previous</button>
-                    <button>Contact us</button>
-                    <button>Next</button>
+                    <div><!-- Adorno --></div>
+                    <h3>Services</h3>
+                    <h2>Art Curation & Interior Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, maxime illo ea adipisci modi debitis.</p>
+                    <div class="g-buttons">
+                        <button>Previous</button>
+                        <button>Contact us</button>
+                        <button>Next</button>
+                    </div>
                 </div>
             </div>
-            <div>
+            
+        </section>
+
+        <section>
+            <div class="join">
                 <div>
                     <h3>Join the list</h3>
                     <h2>Unlock the exclusive world</h2>
                 </div>
-                <div>
+                <div class="join-contact">
                     <!-- Display:block -->
-                    <label>Name</label>
-                    <input type="text">
+                    <label>email:</label>
                     <input type="email" placeholder="Ex. name@mail.com">
                     <input type="submit">
                 </div>
@@ -303,29 +399,30 @@
         <!-- Datos de contacto -->
         <!-- Desktop view: todos los divs en horizontal 
             Mobile: todos los divs en vertcak-->
-        <div>
-            <img src="#" alt="Logo">
+        <div class="footer-div">
+            <img src="./IMG/uniqluxury_logo.png" alt="Logo">
             <a href="#">Become a New Uniq Artis</a>
             <a href="#">Become a Commercial Partner</a>
         </div>
-        <div>
+        <div class="footer-div">
             <a href="#">Suites</a>
             <a href="#">Cities</a>
             <a href="#">Vilas</a>
         </div>
-        <div>
+        <div class="footer-div">
             <h4>Houses</h4>
             <a href="#">Apartaments</a>
             <a href="#">Contact us</a>
         </div>
-        <div>
+        <div class="footer-div">
             <h4>Call Center</h4>
             <span>+52 55 6840</span>
             <a href="concierge@uniqluxury.com">concierge@uniqluxury.com</a>
         </div>
-        <div>
-            <span>Copyright © 2022</span>
-        </div>
+        
     </footer>
+    <div class="copyright">
+        <span>Copyright © 2022</span>
+    </div>
 </body>
 </html>
