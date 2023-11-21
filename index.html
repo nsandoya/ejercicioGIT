@@ -58,16 +58,58 @@
             grid-template-rows: 1fr 1fr;
             max-height: 50vh;
         }
-        .g-title{
+        .g-main-title{
             justify-self: center;
-            margin: 3rem;
+            align-self: center;
+            margin: 2rem;
         }
         .g-buttons{
             justify-self: center;
             align-self: end;
             margin-bottom: 3rem;
         }
-        
+
+        .gallery-devs{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr;
+        }
+        .grid-g-devs{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            /*gap: 0.5rem;*/
+            justify-items: center;
+            margin: 0 3rem;
+        }
+
+        .g-devs-item{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 280px;
+        }
+
+        .g-devs-img{
+            width: 300px;
+            height: 180px;
+            /*background-image: url("./IMG/surf_row.jpg");*/
+            background-size: cover;
+            background-position: end;
+        }
+        .g-devs-title{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0 0 1rem;
+            /*align-self: center;
+            margin: 2rem 1rem;*/
+        }
+        .g-devs-title h4{
+            color: grey;
+        }
+        .g-devs-title h3{
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +180,7 @@
                 <div class="gallery-title">
                     <div class="g-title">
                         <h3>Worldwide gallery</h3>
-                        <h2>Properties for sale</h2>
+                        <h2>Properties for rent</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam delectus asperiores architecto! Dolor, inventore distinctio.</p>
                     </div>
                     <div class="g-buttons">
@@ -157,22 +199,71 @@
             </div>
         </section>
 
-        <section>
+        <section class="gallery-devs">
             <!-- Developments -->
-            <div>
+            <div class="g-main-title">
                 <h3>Luxury properties</h3>
                 <h2>Developments</h2>
             </div>
-            <div> <!-- Galería -->
+            <div class="grid-g-devs"> <!-- Galería -->
                 <!-- Construir tarjetas en c/div -->
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/surf_row.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>The surf row</h4>
+                        <h3>Surfside</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/vero_beach.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>Indigo</h4>
+                        <h3>Vero Beach</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/nassau_bahamas.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>Rosewood - Baha Mar</h4>
+                        <h3>Nassau, The Bahamas</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/astor_tower.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>St. Regis - The Astor Tower</h4>
+                        <h3>Brickell, Miami</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/coral_gabbles.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>Giralda Place</h4>
+                        <h3>Coral Gables</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/brickell_miami.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>St. Regis - The William Tower</h4>
+                        <h3>Brickell, Miami</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/kitts_nevis.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>Solterre at Cockleshell Bay</h4>
+                        <h3>St. Kitts & Nevis</h3>
+                    </div>
+                </div>
+                <div class="g-devs-item">
+                    <div class="g-devs-img" style="background-image: url('./IMG/coconut_grove.jpg');"></div>
+                    <div class="g-devs-title">
+                        <h4>Urbin</h4>
+                        <h3>Coconut Grove</h3>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
