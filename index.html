@@ -11,10 +11,11 @@
         }
         header{
             height: 100vh;
-            background-image: url("./IMG/mikail-mcverry.png");
+            /*background: url("./IMG/mikail-mcverry.png");*/
+            background: linear-gradient(to top, transparent, rgb(79, 80, 138)),
+            url("./IMG/mikail-mcverry.png");
             background-size: cover;
             background-position: center;
-
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 5fr 5fr;
@@ -24,15 +25,23 @@
             flex-direction: row;*/
             display: grid;
             grid-template-columns: 5fr 1fr 1fr 1fr;
-
+            align-items: center;
             border-bottom: 1px solid whitesmoke;
         }
+
+        .navbar div img{
+            margin: 0 3rem;
+        }
+
         .hdr-search-bar{
             justify-self: end;
+            margin: 1rem 3rem;
+
         }
 
         .hdr-title{
             align-self: start;
+            margin-left: 3rem;
         }
 
         .prop-gallery{
@@ -40,6 +49,7 @@
             height: 50vh;
             grid-template-columns: 1fr 1fr;
         }
+        
         .gallery{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
@@ -48,10 +58,31 @@
         .gallery-img{
             width: 250px;
             height: 350px;
-            background-image: url("./IMG/daniel-barnes.png");
+            display: grid;
             background-size:cover;
             background-position: center;
+            grid-template-rows: 1fr auto;
+
         }
+        .prop-img-descr{
+            /*background-color: whitesmoke;*/
+            width: 100%;
+            height: 30%;
+            display: grid;
+            align-self: end;
+            align-content: center;
+            grid-auto-rows: 0fr;
+
+            background-color: rgb(54, 70, 33);
+
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .prop-img-descr h4, span{
+            color: whitesmoke;
+        }
+
         .gallery-title{
             display: grid;
             grid-template-columns: 1fr;
@@ -63,6 +94,21 @@
             align-self: center;
             margin: 2rem;
         }
+
+        .g-title{
+            margin: 3rem;
+        }
+        .sale{
+            justify-self: end;
+            display: grid;
+        }
+
+        .sale h3{
+            justify-self: end;
+            align-self: end;
+            margin: 0;
+        }
+
         .g-buttons{
             justify-self: center;
             align-self: end;
@@ -247,14 +293,29 @@
             <!-- Properties for sale -->
             <div class="prop-gallery">
                 <div class="gallery"> <!-- Galería -->
-                    <div class="gallery-img">Marselles</div>
-                    <div class="gallery-img">Glasgow</div>
-                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img" style="background-image: url('./IMG/glasgow.jpg');">
+                        <div class="prop-img-descr">
+                            <span>France</span>
+                            <h4>Marselles</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-img" style="background-image: url('./IMG/daniel-barnes.png');">
+                        <div class="prop-img-descr">
+                            <span>England</span>
+                            <h4>Glasgow</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-img" style="background-image: url('./IMG/scottish_vilage.jpg');">
+                        <div class="prop-img-descr">
+                            <span>Scotland</span>
+                            <h4>Folk village</h4>
+                        </div>
+                    </div>
                     <div class="gallery-img">Marselles</div>
                     <div class="gallery-img">Marselles</div>
                 </div>
                 <div class="gallery-title">
-                    <div class="g-title">
+                    <div class="g-title sale">
                         <h3>Worldwide gallery</h3>
                         <h2>Properties for sale</h2>
                     </div>
@@ -280,9 +341,24 @@
                     </div>
                 </div>
                 <div class="gallery"> <!-- Galería -->
-                    <div class="gallery-img">Carcassone</div>
-                    <div class="gallery-img">Munich</div>
-                    <div class="gallery-img">Marselles</div>
+                    <div class="gallery-img" style="background-image: url('./IMG/lindsay.png');">
+                        <div class="prop-img-descr">
+                            <span>Italy</span>
+                            <h4>Carcassone</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-img" style="background-image: url('./IMG/munich.png');">
+                        <div class="prop-img-descr">
+                            <span>Germany</span>
+                            <h4>Munich</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-img" style="background-image: url('./IMG/house_swimming_pool.jpg');">
+                        <div class="prop-img-descr">
+                            <span>France</span>
+                            <h4>Triumphant</h4>
+                        </div>
+                    </div>
                     <div class="gallery-img">Marselles</div>
                     <div class="gallery-img">Marselles</div>
                 </div>
