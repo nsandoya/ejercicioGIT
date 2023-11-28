@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Home | UNIQLUXURY Encuentre propiedades de lujo alrededor del mundo | Uniq</title>
-
+    <script src="https://kit.fontawesome.com/a1c839e625.js" crossorigin="anonymous"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Garamond:wght@500;700&display=swap');
         *{
             margin: 0;
         }
         header{
             height: 100vh;
             /*background: url("./IMG/mikail-mcverry.png");*/
-            background: linear-gradient(to top, transparent, rgb(79, 80, 138)),
+            background: linear-gradient(to top, transparent, rgb(76, 88, 114)),
             url("./IMG/mikail-mcverry.png");
             background-size: cover;
             background-position: center;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 5fr 5fr;
+            font-family: 'Cabin', sans-serif;
+
+            color: whitesmoke;
         }
         .navbar{
             /*display: flex;
@@ -27,6 +32,9 @@
             grid-template-columns: 5fr 1fr 1fr 1fr;
             align-items: center;
             border-bottom: 1px solid whitesmoke;
+
+            color: #FFF;
+
         }
 
         .navbar div img{
@@ -42,21 +50,37 @@
         .hdr-title{
             align-self: start;
             margin-left: 3rem;
+            margin-top: 1.5rem;
+            font-size: 2rem;
+            font-weight:lighter;
+            font-family: 'Cormorant Garamond', serif;
+
+        }
+        header h3{
+            font-size: 2rem;
+            font-weight: 100;
+            color: rgb(176, 176, 180);
         }
 
         .prop-gallery{
             display: grid;
-            height: 50vh;
+            height: 350px;
             grid-template-columns: 1fr 1fr;
+            padding-top: 4rem;
         }
         
         .gallery{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-columns: 1fr 1fr 1fr; 
+            /* justify-content: space-around; */
+            /* max-width: 550px; */
+            /* display: flex; */
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
             overflow: hidden;
         }
         .gallery-img{
-            width: 250px;
+            width: 200px;
             height: 350px;
             display: grid;
             background-size:cover;
@@ -73,14 +97,14 @@
             align-content: center;
             grid-auto-rows: 0fr;
 
-            background-color: rgb(54, 70, 33);
+            background-color: whitesmoke;
 
             padding-bottom: 1rem;
             padding-left: 1rem;
         }
 
         .prop-img-descr h4, span{
-            color: whitesmoke;
+            color: #26282B;
         }
 
         .gallery-title{
@@ -126,7 +150,7 @@
             grid-template-rows: 1fr 1fr;
             gap: 0.5rem;
             justify-items: center;
-            margin: 0 3rem;
+            margin: 0 auto;
         }
 
         .g-devs-item{
@@ -172,6 +196,7 @@
             width: 450px;
             height: 600px;
             background-color: #26282B;
+            position: relative;
         }
         .intdes-img{
             width: 450px;
@@ -179,7 +204,7 @@
             background-size: cover;
             background-position: center;
 
-            position: relative;
+            position: absolute;
             left: 100px;
             top: 75px;
         }
@@ -225,7 +250,7 @@
             margin: 2rem 0;
         }
 
-        footer h4, span{
+        footer > h4 span{
             color: whitesmoke;
         }
 
@@ -268,9 +293,12 @@
                 <span>ENG</span>
             </div>
             <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 50 50">
-                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="34" viewBox="0 0 45 34" fill="none">
+                    <path d="M0 2H45" stroke="white" stroke-width="3"/>
+                    <path d="M0 16.4443H45" stroke="white" stroke-width="3"/>
+                    <path d="M0 32H25" stroke="white" stroke-width="3"/>
+                    <path d="M35 32L45 32" stroke="white" stroke-width="3"/>
+                </svg>
             </div>
                 <!-- Menú lateral -->
         </nav>
@@ -283,7 +311,7 @@
         <div class="hdr-title">
         <!-- Título -->
             <h3>Luxury</h3>
-            <h1>Real-Estate</h1>
+            <h1>Real Estate</h1>
             <button>View  all properties</button>
         </div>
     </header>
@@ -293,26 +321,26 @@
             <!-- Properties for sale -->
             <div class="prop-gallery">
                 <div class="gallery"> <!-- Galería -->
-                    <div class="gallery-img" style="background-image: url('./IMG/glasgow.jpg');">
-                        <div class="prop-img-descr">
-                            <span>France</span>
-                            <h4>Marselles</h4>
-                        </div>
-                    </div>
-                    <div class="gallery-img" style="background-image: url('./IMG/daniel-barnes.png');">
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/glasgow.jpg');">
                         <div class="prop-img-descr">
                             <span>England</span>
                             <h4>Glasgow</h4>
                         </div>
-                    </div>
-                    <div class="gallery-img" style="background-image: url('./IMG/scottish_vilage.jpg');">
+                    </a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/daniel-barnes.png');">
+                        <div class="prop-img-descr">
+                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M489.2 287.9h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6V146.2c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6v-32c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32h-36.6v-32c0-6-8-4.6-11.7-4.6v-38c8.3-2 17.1-3.4 25.7-3.4 10.9 0 20.9 4.3 31.4 4.3 4.6 0 27.7-1.1 27.7-8v-60c0-2.6-2-4.6-4.6-4.6-5.1 0-15.1 4.3-24 4.3-9.7 0-20.9-4.3-32.6-4.3-8 0-16 1.1-23.7 2.9v-4.9c5.4-2.6 9.1-8.3 9.1-14.3 0-20.7-31.4-20.8-31.4 0 0 6 3.7 11.7 9.1 14.3v111.7c-3.7 0-11.7-1.4-11.7 4.6v32h-36.6v-32c0-2.6-2-4.6-4.6-4.6h-27.4c-2.6 0-4.6 2-4.6 4.6v32H128v-32c0-2.6-2-4.6-4.6-4.6H96c-2.6 0-4.6 2-4.6 4.6v178.3H54.8v-32c0-2.6-2-4.6-4.6-4.6H22.8c-2.6 0-4.6 2-4.6 4.6V512h182.9v-96c0-72.6 109.7-72.6 109.7 0v96h182.9V292.5c.1-2.6-1.9-4.6-4.5-4.6zm-288.1-4.5c0 2.6-2 4.6-4.6 4.6h-27.4c-2.6 0-4.6-2-4.6-4.6v-64c0-2.6 2-4.6 4.6-4.6h27.4c2.6 0 4.6 2 4.6 4.6v64zm146.4 0c0 2.6-2 4.6-4.6 4.6h-27.4c-2.6 0-4.6-2-4.6-4.6v-64c0-2.6 2-4.6 4.6-4.6h27.4c2.6 0 4.6 2 4.6 4.6v64z"/></svg>France</p>
+                            <h4>Marselles</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/scottish_vilage.jpg');">
                         <div class="prop-img-descr">
                             <span>Scotland</span>
                             <h4>Folk village</h4>
                         </div>
-                    </div>
-                    <div class="gallery-img">Marselles</div>
-                    <div class="gallery-img">Marselles</div>
+                    </a>                 
+                    <a href="#" class="gallery-img">Marselles</a>
+                    <a href="#" class="gallery-img">Marselles</a>
                 </div>
                 <div class="gallery-title">
                     <div class="g-title sale">
@@ -341,26 +369,26 @@
                     </div>
                 </div>
                 <div class="gallery"> <!-- Galería -->
-                    <div class="gallery-img" style="background-image: url('./IMG/lindsay.png');">
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/lindsay.png');">
                         <div class="prop-img-descr">
                             <span>Italy</span>
                             <h4>Carcassone</h4>
                         </div>
-                    </div>
-                    <div class="gallery-img" style="background-image: url('./IMG/munich.png');">
+                    </a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/munich.png');">
                         <div class="prop-img-descr">
                             <span>Germany</span>
                             <h4>Munich</h4>
                         </div>
-                    </div>
-                    <div class="gallery-img" style="background-image: url('./IMG/house_swimming_pool.jpg');">
+                    </a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/house_swimming_pool.jpg');">
                         <div class="prop-img-descr">
                             <span>France</span>
                             <h4>Triumphant</h4>
                         </div>
-                    </div>
-                    <div class="gallery-img">Marselles</div>
-                    <div class="gallery-img">Marselles</div>
+                    </a>
+                    <a href="#" class="gallery-img">Marselles</a>
+                    <a href="#" class="gallery-img">Marselles</a>
                 </div>
             </div>
         </section>
@@ -373,62 +401,62 @@
             </div>
             <div class="grid-g-devs"> <!-- Galería -->
                 <!-- Construir tarjetas en c/div -->
-                <div class="g-devs-item">
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/surf_row.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>The surf row</h4>
                         <h3>Surfside</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/vero_beach.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>Indigo</h4>
                         <h3>Vero Beach</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/nassau_bahamas.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>Rosewood - Baha Mar</h4>
                         <h3>Nassau, The Bahamas</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/astor_tower.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>St. Regis - The Astor Tower</h4>
                         <h3>Brickell, Miami</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/coral_gabbles.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>Giralda Place</h4>
                         <h3>Coral Gables</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/brickell_miami.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>St. Regis - The William Tower</h4>
                         <h3>Brickell, Miami</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/kitts_nevis.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>Solterre at Cockleshell Bay</h4>
                         <h3>St. Kitts & Nevis</h3>
                     </div>
-                </div>
-                <div class="g-devs-item">
+                </a>
+                <a href="#" class="g-devs-item">
                     <div class="g-devs-img" style="background-image: url('./IMG/coconut_grove.jpg');"></div>
                     <div class="g-devs-title">
                         <h4>Urbin</h4>
                         <h3>Coconut Grove</h3>
                     </div>
-                </div>
+                </a>
                 
             </div>
         </section>
