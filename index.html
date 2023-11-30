@@ -5,314 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Home | UNIQLUXURY Encuentre propiedades de lujo alrededor del mundo | Uniq</title>
     <script src="https://kit.fontawesome.com/a1c839e625.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Garamond:wght@500;700&display=swap');
-        *{
-            margin: 0;
-        }
-        header{
-            height: 100vh;
-            /*background: url("./IMG/mikail-mcverry.png");*/
-            background: linear-gradient(to top, transparent, rgb(76, 88, 114)),
-            url("./IMG/mikail-mcverry.png");
-            background-size: cover;
-            background-position: center;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 5fr 5fr;
-            font-family: 'Cabin', sans-serif;
-
-            color: whitesmoke;
-        }
-        .navbar{
-            /*display: flex;
-            flex-direction: row;*/
-            display: grid;
-            grid-template-columns: 5fr 1fr 1fr 1fr;
-            align-items: center;
-            border-bottom: 1px solid whitesmoke;
-
-            color: #FFF;
-
-        }
-
-        .navbar div img{
-            margin: 0 3rem;
-        }
-
-        .hdr-search-bar{
-            justify-self: end;
-            margin: 1rem 3rem;
-
-        }
-
-        .hdr-title{
-            align-self: start;
-            margin-left: 3rem;
-            margin-top: 1.5rem;
-            font-size: 2rem;
-            font-weight:lighter;
-            font-family: 'Cormorant Garamond', serif;
-
-        }
-        header h3{
-            font-size: 2rem;
-            font-weight: 100;
-            color: rgb(176, 176, 180);
-        }
-
-        .prop-gallery{
-            display: grid;
-            height: 350px;
-            grid-template-columns: 1fr 1fr;
-            padding-top: 4rem;
-        }
-        
-        .gallery{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr; 
-            /* justify-content: space-around; */
-            /* max-width: 550px; */
-            /* display: flex; */
-            /* flex-direction: row-reverse; */
-            /* flex-wrap: wrap; */
-            overflow: hidden;
-        }
-        .gallery-img{
-            width: 200px;
-            height: 350px;
-            display: grid;
-            background-size:cover;
-            background-position: center;
-            grid-template-rows: 1fr auto;
-
-        }
-        .prop-img-descr{
-            /*background-color: whitesmoke;*/
-            width: 100%;
-            height: 30%;
-            display: grid;
-            align-self: end;
-            align-content: center;
-            grid-auto-rows: 0fr;
-
-            background-color: whitesmoke;
-
-            padding-bottom: 1rem;
-            padding-left: 1rem;
-        }
-
-        .prop-img-descr h4, span{
-            color: #26282B;
-        }
-
-        .gallery-title{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            max-height: 50vh;
-        }
-        .g-main-title{
-            justify-self: center;
-            align-self: center;
-            margin: 2rem;
-        }
-
-        .g-title{
-            margin: 3rem;
-        }
-        .sale{
-            justify-self: end;
-            display: grid;
-        }
-
-        .sale h3{
-            justify-self: end;
-            align-self: end;
-            margin: 0;
-        }
-
-        .g-buttons{
-            justify-self: center;
-            align-self: end;
-            margin-bottom: 3rem;
-        }
-
-        .gallery-devs{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 4fr;
-        }
-        .grid-g-devs{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 0.5rem;
-            justify-items: center;
-            margin: 0 auto;
-        }
-
-        .g-devs-item{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            height: 280px;
-        }
-
-        .g-devs-img{
-            width: 300px;
-            height: 180px;
-            /*background-image: url("./IMG/surf_row.jpg");*/
-            background-size: cover;
-            background-position: end;
-        }
-        .g-devs-title{
-            display: flex;
-            flex-direction: column;
-            margin: 2rem 0 0 1rem;
-            /*align-self: center;
-            margin: 2rem 1rem;*/
-        }
-        .g-devs-title h4{
-            color: grey;
-        }
-        .g-devs-title h3{
-            font-size: 1.2rem;
-        }
-
-        .int-des{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-
-            margin: 0 4rem;
-            margin-top: 4rem;
-
-            align-items: center;
-        }
-
-        .intdes-bg-img{
-            width: 450px;
-            height: 600px;
-            background-color: #26282B;
-            position: relative;
-        }
-        .intdes-img{
-            width: 450px;
-            height: 450px;
-            background-size: cover;
-            background-position: center;
-
-            position: absolute;
-            left: 100px;
-            top: 75px;
-        }
-
-        .join{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            background-color: #26282B;
-            margin: 0 4rem;
-            padding: 3rem;
-
-            align-items: center;
-            position: relative;
-            top: 60px;
-        }
-
-        .join-contact{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .join-contact > input[submit]{
-            width: 50px;
-            align-self: end;
-        }
-
-        footer{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            height: 40vh;
-
-            align-items: end;
-            justify-items: center;
-            padding: 0 3rem;
-
-            background-color: black;
-            line-height: 1.5rem;
-        }
-
-        footer img{
-            margin: 2rem 0;
-        }
-
-        footer > h4 span{
-            color: whitesmoke;
-        }
-
-        .footer-div{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .copyright{
-            display: grid;
-            background-color: black;
-            border-top: 1px solid whitesmoke;
-            padding: 0.8rem 0;;
-        }
-
-        .copyright span{
-            justify-self: center;
-            color: whitesmoke;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div>
                 <!-- Icono -->
-                <img src="./IMG/uniqluxury_logo.png" alt="uniqluxury_logo">
+                <a href="#"><img src="./IMG/uniqluxury_logo.png" alt="uniqluxury_logo"></a>
             </div>
+            <divc class="nav-side">
                 <!-- Opciones -->
-            <div>
+                <div class="nav-items">
                     <!-- display:inline-block -->
-                <span>Login</span>
-                <span>|</span>
-                <span>Sing Up</span>
-            </div>
-            <div>
-                <!-- display:inline-block -->
-                <span>ESP</span>
-                <span>ENG</span>
-            </div>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="34" viewBox="0 0 45 34" fill="none">
-                    <path d="M0 2H45" stroke="white" stroke-width="3"/>
-                    <path d="M0 16.4443H45" stroke="white" stroke-width="3"/>
-                    <path d="M0 32H25" stroke="white" stroke-width="3"/>
-                    <path d="M35 32L45 32" stroke="white" stroke-width="3"/>
-                </svg>
-            </div>
-                <!-- Menú lateral -->
+                    <a href="#">LOGIN</a>
+                    <span>|</span>
+                    <a href="#">SIGN UP</a>
+                </div>
+                <div class="nav-items-2">
+                    <!-- display:inline-block -->
+                    <a href="#">ESP</a>
+                    <a href="#">ENG</a>
+                </div>
+                <div id="b-menu" class="b-menu">
+                    <!-- Menú lateral -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="34" viewBox="0 0 45 34" fill="none">
+                        <path d="M0 2H45" stroke="white" stroke-width="3"/>
+                        <path d="M0 16.4443H45" stroke="white" stroke-width="3"/>
+                        <path d="M0 32H25" stroke="white" stroke-width="3"/>
+                        <path d="M35 32L45 32" stroke="white" stroke-width="3"/>
+                    </svg>
+                </div>
+            </div>      
         </nav>
             <!-- Portada -->
         <div class="hdr-search-bar">
         <!-- Barra de búsqueda -->
-            <input type="text" placeholder="Ex. Villa Budapest">
-            <input type="submit">
+            <input class="search" type="text" placeholder="Ex. Villa Budapest">
         </div>
         <div class="hdr-title">
         <!-- Título -->
             <h3>Luxury</h3>
             <h1>Real Estate</h1>
-            <button>View  all properties</button>
+            <button class="h-view-button" name="button">View  all properties</button>
         </div>
     </header>
 
@@ -339,8 +74,8 @@
                             <h4>Folk village</h4>
                         </div>
                     </a>                 
-                    <a href="#" class="gallery-img">Marselles</a>
-                    <a href="#" class="gallery-img">Marselles</a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/daniel-barnes.png');">Marselles</a>
+                    <a href="#" class="gallery-img" style="background-image: url('./IMG/daniel-barnes.png');">Marselles</a>
                 </div>
                 <div class="gallery-title">
                     <div class="g-title sale">
