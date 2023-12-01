@@ -3,7 +3,18 @@
 *{
     margin: 0;
 }
+
 header{
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Cabin', sans-serif;
+    color: whitesmoke;
+}
+
+.front-page{
     height: 100vh;
     /*background: url("./IMG/mikail-mcverry.png");*/
     background: linear-gradient(to top, transparent, rgb(76, 88, 114)),
@@ -12,7 +23,7 @@ header{
     background-position: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr;
     font-family: 'Cabin', sans-serif;
 
     color: whitesmoke;
@@ -24,7 +35,6 @@ header{
     grid-template-columns: 2fr 2fr;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
-    
     color: #FFF;
 
 }
@@ -94,6 +104,7 @@ header div a:nth-child(2), :nth-child(3){
     /* justify-self: end; */
     margin: 1rem 1rem;
     position: relative;
+    top: 3rem;
     right: 5rem;
 }
 
@@ -270,23 +281,26 @@ header h3{
     grid-template-rows: 1fr 4fr;
 }
 .grid-g-devs{
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     gap: 0.5rem;
     justify-items: center;
     margin: 0 auto;
 }
 
 .g-devs-item{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    width: 100%;
     height: 280px;
+    text-decoration: none;
 }
 
 .g-devs-img{
-    width: 300px;
+    width: 100%;
     height: 180px;
     /*background-image: url("./IMG/surf_row.jpg");*/
     background-size: cover;
@@ -308,9 +322,9 @@ header h3{
 
 .int-des{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 200px 1fr;
     grid-template-rows: 1fr;
-
+    /* grid-template-areas: "intdes-img . intes-txt"; */
     margin: 0 4rem;
     margin-top: 4rem;
 
@@ -322,17 +336,34 @@ header h3{
     height: 600px;
     background-color: #26282B;
     position: relative;
+    grid-column: 1/2 !important;
+    
 }
 .intdes-img{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     background-size: cover;
     background-position: center;
 
     position: absolute;
     left: 100px;
-    top: 75px;
+    top: 3rem;
 }
+
+.intdes-text{
+    grid-column: 3/4 !important;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    align-items: end;
+}
+
+.id-txt{
+    display: grid;
+    align-items: end;
+}
+
 
 .join{
     display: grid;
