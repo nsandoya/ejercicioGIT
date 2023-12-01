@@ -141,11 +141,15 @@ header div a:nth-child(2), :nth-child(3){
     position: relative;
 }
 
-header h3{
+.front-page h1{
+    font-size: 4rem;
+}
+
+.front-page h3{
     position: absolute;
-    top: -25px;
-    left: 10px;
-    font-size: 2rem;
+    top: -17px;
+    left: 15px;
+    font-size: 1.8rem;
     font-weight: 100;
     color: rgb(176, 176, 180);
 }
@@ -176,7 +180,7 @@ header h3{
 
 .prop-gallery{
     display: grid;
-    height: 350px;
+    height: 550px;
     grid-template-columns: 1fr 1fr;
     padding-top: 4rem;
 }
@@ -185,7 +189,6 @@ header h3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 400px;
-    
 }
 
 .gallery{
@@ -207,13 +210,6 @@ header h3{
     display: flex;
 }
         
-/* .gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-} */
 .gallery-img{
     width: 250px;
     height: 100%;
@@ -221,13 +217,105 @@ header h3{
     background-size:cover;
     background-position: center;
     grid-template-rows: 1fr auto;
+    margin: 0.8%;
+}
 
+.gallery-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 93%;
+}
+
+.g-title{
+    font-family: 'Cormorant Garamond', serif;
+    margin-inline: 5rem;
+}
+
+.g-title h2{
+    font-size: 4rem;
+    text-align: right;
+}
+
+.g-title h3{
+    font-size: 2rem;
+    color: #DF991B;
+}
+
+.g-prop-h3{
+    position: relative;
+    left: 2.8rem;
+}
+
+.gp-h3-right{
+    text-align: left !important;
+    position: relative;
+    left: 2.8rem;
+}
+
+.g-buttons{
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: end;
+    /* margin-bottom: 3rem; */
+    margin-left: 3rem;
+}
+
+.g-buttons .btn-view-all{
+    width: 15rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8em;
+    background-color: transparent;
+    margin-top: 1.3rem;
+    padding: 1rem 0;
+    border: 1px solid #26282B;
+    border-radius: 30px;
+    letter-spacing: 0.05rem;
+    background-color: white;
+    color: #26282B;
+}
+
+.btn-prev, .btn-next{
+    background-color: transparent;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.btn-prev{
+    color: gray;
+
+}
+
+.btn-prev::before{
+    content: '<';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    align-self: center;
+}
+
+.btn-next{
+    color: #DF991B !important;
+}
+
+.btn-next::after{
+    content: '>';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+    align-self: center;
 }
 
 .prop-img-descr{
     /*background-color: whitesmoke;*/
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: grid;
     align-self: end;
     align-content: center;
@@ -243,21 +331,13 @@ header h3{
     color: #26282B;
 }
 
-.gallery-title{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-height: 50vh;
-}
+
 .g-main-title{
     justify-self: center;
     align-self: center;
     margin: 2rem;
 }
 
-.g-title{
-    margin: 3rem;
-}
 .sale{
     justify-self: end;
     display: grid;
@@ -269,19 +349,20 @@ header h3{
     margin: 0;
 }
 
-.g-buttons{
+/* .g-buttons{
     justify-self: center;
     align-self: end;
     margin-bottom: 3rem;
-}
+} */
 
 .gallery-devs{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr;
+    height: 800px;
 }
 .grid-g-devs{
-    width: 90%;
+    /* width: 90%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
