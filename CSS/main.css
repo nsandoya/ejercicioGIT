@@ -234,13 +234,17 @@ header div a:nth-child(2), :nth-child(3){
 }
 
 .g-title h2{
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: right;
+    line-height: 3rem;
+
 }
 
 .gp-h2-left{
     position: relative;
     left: -0.8rem;
+    line-height: 3rem;
+
 }
 
 .gp-h3-left{
@@ -380,7 +384,7 @@ header div a:nth-child(2), :nth-child(3){
 
 .glr-title-h2{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black !important;
     text-align: center;
 
@@ -444,31 +448,31 @@ header div a:nth-child(2), :nth-child(3){
 
 .int-des{
     display: grid;
-    grid-template-columns: 650px 50px 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 70px 1fr;
+    /* justify-items: center; */
     margin-left: 4rem;
     margin-top: 4rem;
     height: 650px;
-/*     align-items: center; */
+    align-items: center;
 }
 
 .intdes-bg-img{
-    width: 450px;
-    height: 600px;
+    width: 25rem;
+    height: 33rem;
     background-color: #26282B;
     position: relative;
     grid-column: 1/2 !important;
     
 }
 .intdes-img{
-    width: 500px;
-    height: 500px;
+    width: 28rem;
+    height: 28rem;
     background-size: cover;
     background-position: center;
 
     position: absolute;
     left: 60px;
-    top: 3rem;
+    top: 2.5rem;
 }
 
 .intdes-text{
@@ -482,9 +486,9 @@ header div a:nth-child(2), :nth-child(3){
 
 .id-txt{
     display: grid;
-    grid-template-rows: 40px 2fr 2fr;
+    grid-template-rows: 40px 2fr 4fr;
     align-items: baseline;
-    width: 70%;
+    width: 80%;
 
     font-family: 'Cormorant Garamond', serif;
     /* margin-inline: 5rem; */
@@ -500,9 +504,9 @@ header div a:nth-child(2), :nth-child(3){
 }
 
 .id-txt h2{
-    font-size: 4rem;
+    font-size: 3rem;
     color: black;
-    line-height: 3.5rem;
+    line-height: 3rem;
 }
 
 .id-txt h3{
@@ -527,7 +531,7 @@ header div a:nth-child(2), :nth-child(3){
     width: 50%;
     align-items: baseline;
     grid-template-columns: repeat(3, 1fr);
-    /* align-self: center; */
+    align-self: start;
     gap: 10px;
     /* margin-bottom: 3rem; */
     /* margin-left: 3rem; */
