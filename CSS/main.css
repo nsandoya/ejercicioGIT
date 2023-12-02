@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Garamond:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Cormorant+Garamond:wght@500;700&family=Prata&display=swap');
+
 *{
     margin: 0;
+}
+
+html {
+    box-sizing: border-box !important;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit !important;
+  }
+
+section{
+    border: 2px solid red;
 }
 
 header{
@@ -16,6 +29,7 @@ header{
 
 .front-page{
     height: 100vh;
+    width: 100% !important;
     /*background: url("./IMG/mikail-mcverry.png");*/
     background: linear-gradient(to top, transparent, rgb(76, 88, 114)),
     url("../IMG/mikail-mcverry.png");
@@ -399,7 +413,7 @@ header div a:nth-child(2), :nth-child(3){
     margin-top: 30px;
 }
 .grid-g-devs{
-    width: 90%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
@@ -450,9 +464,9 @@ header div a:nth-child(2), :nth-child(3){
     display: grid;
     grid-template-columns: 1fr 70px 1fr;
     /* justify-items: center; */
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     margin-top: 4rem;
-    height: 650px;
+    height: 620px;
     align-items: center;
 }
 
@@ -462,6 +476,7 @@ header div a:nth-child(2), :nth-child(3){
     background-color: #26282B;
     position: relative;
     grid-column: 1/2 !important;
+    margin-left: 4rem;
     
 }
 .intdes-img{
@@ -537,6 +552,10 @@ header div a:nth-child(2), :nth-child(3){
     /* margin-left: 3rem; */
 }
 
+.join-container{
+    height: 12rem;
+}
+
 .join{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -548,6 +567,12 @@ header div a:nth-child(2), :nth-child(3){
     align-items: center;
     position: relative;
     top: 60px;
+    
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.j-title{
+    padding-left: 4.5rem;
 }
 
 .join-contact{
@@ -555,16 +580,56 @@ header div a:nth-child(2), :nth-child(3){
     flex-direction: column;
 }
 
-.join-contact > input[submit]{
-    width: 50px;
-    align-self: end;
+.join h2{
+    font-size: 2.5rem;
+    color: #FFF;
+}
+.join h3{
+    font-size: 1.5rem;
+    color: #DF991B;
+}
+
+.join label{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    margin: 0.5rem 0.2rem;
+    text-transform: uppercase;
+}
+
+.join-contact input{
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8em;
+    background-color: transparent;
+
+    margin: 0.5rem 0;
+    border-radius: 30px;
+    letter-spacing: 0.05rem;
+    align-self: flex-end;
+}
+
+.join-contact input[type=text], .join-contact input[type=email]{
+    padding: 0.5rem 1rem;
+    width: 75%;
+    color: #FFF;
+    border: 1px solid #fff;
+}
+
+.join-contact > input[type=submit]{
+    margin-top: 1.3rem;
+    padding: 0.8rem 0;
+    width: 15rem;
+    color:#DF991B;
+    border: 1px solid #DF991B;
+    position: relative;
+    right: 4rem;
+
 }
 
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    height: 40vh;
+    height: 20rem;
 
     align-items: end;
     justify-items: center;
@@ -585,6 +650,25 @@ footer > h4 span{
 .footer-div{
     display: flex;
     flex-direction: column;
+    font-family: 'Cabin', sans-serif;
+    margin: 2rem 0;
+}
+
+.footer-div a, .footer-div span{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.call-center{
+    text-align: right !important;
+    margin-left: 2rem;
+}
+
+.call-center span{
+    font-size: 2rem;
+    font-family: 'Prata', serif;
+    margin: 0.8rem 0;
+
 }
 
 .copyright{
@@ -595,6 +679,7 @@ footer > h4 span{
 }
 
 .copyright span{
+    font-family: 'Cabin', sans-serif;
     justify-self: center;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
