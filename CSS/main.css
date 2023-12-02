@@ -497,6 +497,7 @@ header div a:nth-child(2), :nth-child(3){
     grid-template-rows: 1fr 1fr 1fr;
     height: 550px;
     align-items: end;
+    justify-items: end;
 }
 
 .id-txt{
@@ -504,6 +505,7 @@ header div a:nth-child(2), :nth-child(3){
     grid-template-rows: 40px 2fr 4fr;
     align-items: baseline;
     width: 80%;
+    margin-right: 2rem;
 
     font-family: 'Cormorant Garamond', serif;
     /* margin-inline: 5rem; */
@@ -511,7 +513,7 @@ header div a:nth-child(2), :nth-child(3){
 }
 
 .id-unq-decor{
-    width: 100%;
+    width: 85%;
     height: 60px;
     background-size: cover;
     background-position: center;
@@ -548,8 +550,26 @@ header div a:nth-child(2), :nth-child(3){
     grid-template-columns: repeat(3, 1fr);
     align-self: start;
     gap: 10px;
+    justify-self: start;
+
+    position: relative;
+    left: 4rem;
     /* margin-bottom: 3rem; */
     /* margin-left: 3rem; */
+}
+
+.btn-contact-us{
+    width: 10rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.8em;
+    background-color: transparent;
+    margin-top: 1.3rem;
+    padding: 1rem 0;
+    border: 1px solid #26282B;
+    border-radius: 30px;
+    letter-spacing: 0.05rem;
+    background-color: white;
+    color: #26282B;
 }
 
 .join-container{
