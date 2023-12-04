@@ -35,13 +35,27 @@
         margin-left: 0.8rem;
     }
 
+    .header .nav-side{
+        width: 15rem;
+        justify-content: end;
+        align-items: center;
+        justify-content: right;
+        border: 0 !important;
+
+    }
+    .header .nav-side .b-menu svg{
+        width: 2rem !important;
+        border: 0 !important;
+        /* margin-inline: 5px; */
+    }
+
     .front-page{
         background: linear-gradient(to bottom, transparent, #475b85), url("../IMG/mikail-mcverry.png");
         filter: brightness(85%);
         filter: contrast(102%);
         background-size: cover;
         background-position: center;
-        height: 75vh;
+        height: 70vh;
     }
 
     .hdr-search-bar{
@@ -98,7 +112,7 @@
         height: 5px;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
-        margin: 20px auto;
+        margin: 50px auto;
     }
     .hdr-slide div{
         background-color: #f5f5f5;

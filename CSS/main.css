@@ -130,7 +130,7 @@ header div a:nth-child(2), :nth-child(3){
 
 .search{
     grid-area: search;
-    width: 300px;
+    width: 310px;
     padding: 0.8rem 2rem;
     background-color: transparent;
     font-family: 'Cabin', sans-serif;
