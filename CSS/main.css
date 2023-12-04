@@ -197,6 +197,10 @@ header div a:nth-child(2), :nth-child(3){
     color: #26282B;
 }
 
+.hdr-slide{
+    display: none;
+}
+
 
 .prop-gallery{
     display: grid;
