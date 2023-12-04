@@ -1,0 +1,30 @@
+/* @media(min-width: 720px) and (max-width: 960px){
+    .intdes-bg-img{
+    position: relative;
+    left: 10%;
+    } 
+} */
+
+@media(min-width: 320px) and (max-width: 720px){
+    .nav-items, .nav-items-2{
+        display: none;
+    }
+
+    header .unq_logo_d{
+        display: none;
+    }
+
+    header .unq_logo_m, header .unq_logo_m img{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* .int-des{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 70px 1fr;
+    } */
+    
+} 
+
