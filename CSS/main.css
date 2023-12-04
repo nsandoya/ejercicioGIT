@@ -305,6 +305,10 @@ header div a:nth-child(2), :nth-child(3){
     left: 2.8rem;
 }
 
+.pr-link{
+    display: none;
+}
+
 .g-buttons{
     display: grid;
     justify-items: center;
@@ -610,6 +614,7 @@ header div a:nth-child(2), :nth-child(3){
 .join-contact{
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 .join h2{
@@ -652,8 +657,8 @@ header div a:nth-child(2), :nth-child(3){
     width: 15rem;
     color:#DF991B;
     border: 1px solid #DF991B;
-    position: relative;
-    right: 4rem;
+/*     position: relative;
+    right: 4rem; */
 
 }
 
