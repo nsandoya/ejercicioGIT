@@ -18,6 +18,12 @@
         display: none;
     }
 
+    header{
+        background: linear-gradient(to top, transparent, #b3bfda);
+        border: 1px solid red;
+        max-width: 100vw !important;
+    }
+
     header .unq_logo_d{
         display: none;
     }
@@ -26,13 +32,16 @@
         display: inline-block;
         width: 30px;
         height: 30px;
+        margin-left: 0.8rem;
     }
 
     .front-page{
         background: linear-gradient(to bottom, transparent, #475b85), url("../IMG/mikail-mcverry.png");
-        filter: brightness(70%);
+        filter: brightness(85%);
+        filter: contrast(102%);
         background-size: cover;
         background-position: center;
+        height: 75vh;
     }
 
     .hdr-search-bar{
@@ -325,8 +334,9 @@
         text-align: left !important;
         margin-left: 0;
     }
-    .copyrigth{
+    .copyright{
         max-width: 100vw;
+        border: 1px solid red;
     }
 } 
 
