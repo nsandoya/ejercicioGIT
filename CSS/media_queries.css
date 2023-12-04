@@ -247,10 +247,22 @@
         grid-template-columns: 1fr;
         gap: 2rem;
         margin: 0 1.5rem;
-        padding: 2rem;
+        padding: 3rem 2rem;
     }
     .join .j-title{
         padding: 0;
+    }
+    .join-contact{
+        text-align: left;
+    }
+    .join-contact .join-btn{
+        display: none;
+    }
+    .join .pr-link{
+        display: block;
+        width: 10rem;
+        margin-left: 0;
+        margin-bottom: 0;
     }
     
 } 
