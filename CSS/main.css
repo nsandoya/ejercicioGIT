@@ -403,6 +403,10 @@ header div a:nth-child(2), :nth-child(3){
 /*     margin: 2rem; */
 }
 
+.grid-m-devs{
+    display: none;
+}
+
 .glr-title-h3{
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
