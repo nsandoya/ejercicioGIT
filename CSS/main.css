@@ -27,6 +27,7 @@ header{
     font-family: 'Cabin', sans-serif;
     color: whitesmoke;
     z-index: 1;
+
 }
 
 header .unq_logo_m,  header .unq_logo_m img{
@@ -37,7 +38,7 @@ header .unq_logo_m,  header .unq_logo_m img{
     height: 100vh;
     width: 100% !important;
     /*background: url("./IMG/mikail-mcverry.png");*/
-    background: linear-gradient(to top, transparent, rgb(76, 88, 114)),
+    background: linear-gradient(to top, transparent, #4c5872),
     url("../IMG/mikail-mcverry.png");
     background-size: cover;
     background-position: center;
@@ -56,6 +57,7 @@ header .unq_logo_m,  header .unq_logo_m img{
     align-items: center;
     border-bottom: 1px solid whitesmoke;
     color: #FFF;
+    background-color: rgba(75, 87, 113, 50%);
 
 }
 
