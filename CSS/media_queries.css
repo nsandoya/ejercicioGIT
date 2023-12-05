@@ -139,8 +139,19 @@
     }
 } 
 @media (max-width: 760px){
+    .unq_logo_m > img:nth-child(1), header .b-menu svg{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
     h2{
         font-size: 2.8rem !important;
+    }
+
+    .hdr-slide{
+        width: 30% !important;
     }
 
     .prop-gallery .pr-buttons, .intdes-text .g-buttons-id{
@@ -162,7 +173,7 @@
 
     .prop-gallery .pr-link{
         position: relative;
-        left: 1.5rem;
+        /* left: 1.5rem; */
 /*         top: 5rem !important; */
     }
 
@@ -171,7 +182,8 @@
     }
     .intdes-text .pr-link{
         position: relative;
-        left: -5.5rem;
+        justify-self: start;
+        left: 0.5rem !important;
         top: -3.5rem !important;
     }
 
@@ -220,7 +232,7 @@
     }
 }
 
-@media(max-width: 680px){
+@media(max-width: 640px){
     *{
         margin: 0;
     }
@@ -489,8 +501,11 @@
         position: static;
     }
 
-    .intdes-text a{
-        align-self: start;
+    .intdes-text .pr-link{
+        position: relative;
+        justify-self: start;
+        left: 1.5rem !important;
+        top: -4.5rem !important;
     }
 
     .intdes-bg-img{
@@ -516,7 +531,9 @@
         left: 2.3rem;
     }
 
-    
+    .join{
+        padding: 2rem 2rem;
+    }
 
     footer{
         display: grid;
@@ -535,7 +552,7 @@
         justify-items: left;
         align-items: center;
         padding: 0;
-        padding-left: 2rem;
+        /* padding-left: 2rem; */
         
         font-size: 1.2rem;
         color: #dbdbdb;
