@@ -19,7 +19,8 @@
     }
 
     header{
-        background: linear-gradient(to top, transparent, #b3bfda);
+        /* background: linear-gradient(to top, transparent, #b3bfda); */
+        z-index: 1;
         border: 1px solid red;
         max-width: 100vw !important;
     }
@@ -35,12 +36,13 @@
         margin-left: 0.8rem;
     }
 
-    .header .nav-side{
-        width: 15rem;
+    .nav-side{
+        width: 15rem !important;
         justify-content: end;
-        align-items: center;
-        justify-content: right;
+        /* align-items: center; */
+        /* justify-content: right; */
         border: 0 !important;
+        margin-inline: 2rem;
 
     }
     .header .nav-side .b-menu svg{
@@ -103,7 +105,7 @@
     }
 
     .h-view-button{
-        width: 19.5rem;
+        width: 22rem;
     }
 
     .hdr-slide{
@@ -193,6 +195,11 @@
         height: auto;
         margin: 0;
     }
+    .gallery .gallery-img .prop-img-descr{
+        height: 30%;
+    }
+
+
 
     .g-main-title, .g-main-title h3{
         justify-self: left;
@@ -225,8 +232,8 @@
 
     .int-des{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 80vh 30px 1fr;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 50vh 30px 1fr !important;
         grid-template-areas: 
             "id-text"
             ". "
@@ -274,7 +281,7 @@
     .intdes-bg-img .intdes-img{
         position: absolute;
         left: 30px;
-        width: 20rem;
+        width: 22rem;
     }
 
     .g-buttons-id{
@@ -316,19 +323,22 @@
     footer{
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 22%);
         grid-template-areas: 
             "logo logo"
             "become become"
             "suites houses"
             "call-center call-center";
-        height: 110vh;
+        height: 60vh;
 
         text-align: left !important;
         justify-items: left;
         align-items: center;
         padding: 0;
         padding-left: 2rem;
+        
+        font-size: 1.2rem;
+        color: #dbdbdb;
         
     }
     footer div img{
