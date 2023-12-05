@@ -333,7 +333,10 @@ header div a:nth-child(2), :nth-child(3){
     background-color: white;
     color: #26282B;
 }
+.btn-view-all::before{
+    content: 'View all properties' !important;
 
+}
 .btn-prev, .btn-next{
     background-color: transparent;
     border: none;
@@ -478,6 +481,10 @@ header div a:nth-child(2), :nth-child(3){
     color: #26282B !important;
     font-weight:700;
 }
+.btn-g-grid{
+    display: none;
+}
+
 
 .int-des{
     display: grid ;

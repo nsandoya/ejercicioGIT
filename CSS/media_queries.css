@@ -1,11 +1,92 @@
-/* @media(min-width: 720px) and (max-width: 960px){
-    .intdes-bg-img{
+@media(min-width: 620px) and (max-width: 960px){
+    html{
+        font-size: 15px;
+    }
+
+    header{
+        max-width: 100vw;
+        z-index: 1;
+    }
+
+    .front-page{
+        height: 60vh;
+    }
+
+    .hdr-search-bar{
+        right: 1rem;
+    }
+
+    .prop-gallery{
+        height: 55vh;
+    }
+    .prop-gallery .btn-view-all{
+        width: 8rem;    }
+    .btn-view-all::before{
+        content: 'View more' !important;
+    }
+    /* .prop-gallery .btn-view-all::content{
+    } */
+    .gallery-title .g-title{
+        margin-inline: 3rem;
+    }
+    .gallery-title .gp-h3-left{
+        text-align: left;
+        position: relative;
+        left: 0.1rem !important;
+        font-size: 2rem;
+    }
+    .gallery-title .gp-h2-left{
+        position: relative;
+        left: 0.1rem;
+        font-size: 3rem;
+        text-align: left;
+    }
+    .gallery-title p{
+        position: relative;
+        left: 0.1rem;
+    }
+    .gallery-title .pr-buttons{
+        margin-inline: 1.5rem;
+    }
+
+    .gallery-title .gp-prop-h3, .gallery-title .gp-h2-right, .gallery-title p{
+        left: 0;
+    }
+
+    .gallery-devs{
+        height: 70vh;
+    }
+    .gallery-devs .grid-g-devs{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 45vh;
+        overflow-y: hidden;
+        align-items: start !important;
+    }
+    .grid-g-devs .g-devs-item {
+        width: 100%;
+        height: 230px;
+    }
+    .grid-g-devs .g-devs-item .g-devs-title{
+        height: 20% !important;
+        overflow-y: hidden;
+        margin: 1rem 0 0 rem;
+        justify-content: start;
+    }
+
+    .btn-g-grid{
+        display: block;
+        margin-top: 2rem;
+        justify-self: center;
+    }
+
+    /* .intdes-bg-img{
     position: relative;
     left: 10%;
-    } 
-} */
+    }  */
+} 
 
-@media(min-width: 320px) and (max-width: 720px){
+@media(min-width: 320px) and (max-width: 620px){
     *{
         margin: 0;
     }
@@ -57,7 +138,7 @@
         filter: contrast(102%);
         background-size: cover;
         background-position: center;
-        height: 70vh;
+        height: 100vh;
     }
 
     .hdr-search-bar{
@@ -289,7 +370,7 @@
     }
     .intdes-bg-img .hdr-slide{
         position: relative;
-        top: 90vh;
+        top: 46.5vh;
         left: 2.3rem;
     }
 
