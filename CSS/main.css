@@ -14,10 +14,10 @@ html {
   }
 
 
-section, footer{
+/* section, footer{
     border: 2px solid red;
 }
-
+ */
 header{
     width: 100%;
     height: 3rem;
