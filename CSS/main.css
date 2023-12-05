@@ -160,6 +160,7 @@ header div a:nth-child(2), :nth-child(3){
     font-weight:lighter;
     font-family: 'Cormorant Garamond', serif;
     position: relative;
+    top: 7rem;
 }
 
 .front-page h1{
@@ -501,7 +502,7 @@ header div a:nth-child(2), :nth-child(3){
     height: 33rem;
     background-color: #26282B;
     position: relative;
-    left: 25%;
+    left: 15%;
     grid-column: 1/2 !important;
     /* margin-left: 4rem; */
     
@@ -511,7 +512,7 @@ header div a:nth-child(2), :nth-child(3){
     height: 28rem;
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
     position: absolute;
     left: 60px;
     top: 2.5rem;
