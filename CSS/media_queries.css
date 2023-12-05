@@ -220,7 +220,7 @@
     }
 }
 
-@media(max-width: 620px){
+@media(max-width: 680px){
     *{
         margin: 0;
     }
@@ -540,6 +540,19 @@
         font-size: 1.2rem;
         color: #dbdbdb;
         
+    }
+    footer .footer-div{
+        margin: 1rem auto !important;
+        width: 80%;
+    }
+    footer .f-h{
+        width: 60%;
+    }
+    footer img{
+        width: 20rem;
+    }
+    footer .call-center{
+        margin: 1rem auto !important;
     }
     footer div img{
         grid-area: logo;
