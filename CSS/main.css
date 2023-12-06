@@ -12,7 +12,11 @@ html {
   *, *:before, *:after {
     box-sizing: inherit !important;
   }
-
+/* main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, 1fr);
+} */
 
 /* section, footer{
     border: 2px solid red;
@@ -35,7 +39,7 @@ header .unq_logo_m,  header .unq_logo_m img{
 }
 
 .front-page{
-    height: 100vh;
+    min-height: 130vh !important;
     width: 100% !important;
     /*background: url("./IMG/mikail-mcverry.png");*/
     background: linear-gradient(to top, transparent, #4c5872),
