@@ -230,7 +230,7 @@
         position: relative;
         justify-self: start;
         left: 0.5rem !important;
-        top: 0.5rem !important;
+        top: -4rem !important;
     }
     .intdes-bg-img{
         width: 18rem !important;
@@ -241,7 +241,7 @@
         left: 30px !important;
     }
     .intdes-text{
-        height: 40vh;
+        height: 55vh;
         position: relative;
         top: -5rem;
         left: 1rem;
@@ -578,7 +578,8 @@
     .grid-m-devs .g-devs-img{
         background-size: cover;
         background-position: center;
-        background-position-y: -80px;
+        background-position-y: -270px;
+        height: 180px !important;
     }
     .grid-m-devs .g-devs-title{
         margin: 1.5rem 2rem;
@@ -630,7 +631,7 @@
         position: relative;
         justify-self: start;
         left: 25px !important;
-        top: -2rem !important;
+        top: -3rem !important;
     }
 
     .intdes-bg-img{
@@ -638,7 +639,7 @@
         width: 80%;
         position: relative !important;
         left: -2rem !important;
-        top: -7.5rem;
+        top: -3rem;
         margin: 0 auto;
     }
     .intdes-bg-img .intdes-img{
