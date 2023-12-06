@@ -173,7 +173,7 @@
 
 
     .prop-gallery{
-        margin-bottom: 6rem;
+        margin-bottom: 6rem !important;
     }
     .prop-gallery .pr-buttons, .intdes-text .g-buttons-id{
         display: none !important;
@@ -199,7 +199,7 @@
     }
 
     .gallery-devs{
-        height: 100vh;
+        height: 70vh !important;
     }
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
@@ -246,12 +246,12 @@
         position: relative !important; 
         left: 30px !important;
     }
-    .intdes-text{
+    /* .intdes-text{
         height: 55vh;
         position: relative;
         top: -5rem;
         left: 1rem;
-    }
+    } */
     .int-des .id-unq-decor{
         width: 93%;
     }
