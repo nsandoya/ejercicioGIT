@@ -212,7 +212,7 @@ header div a:nth-child(2), :nth-child(3){
 
 .prop-gallery{
     display: grid;
-    height: 550px;
+    height: 450px !important;
     grid-template-columns: 1fr 1fr;
     padding-top: 4rem;
     margin: 3rem 0;

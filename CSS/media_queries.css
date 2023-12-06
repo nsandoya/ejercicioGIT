@@ -81,7 +81,8 @@
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        min-height: 78vh;
+        min-height: 85vh !important;
+        height: 85vh !important;
         overflow-y: hidden;
         align-self: center !important;
     }
