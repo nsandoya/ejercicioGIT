@@ -83,8 +83,8 @@
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        min-height: 75vh !important;
-        height: 75vh !important;
+        min-height: 70vh !important;
+        height: 70vh !important;
         overflow-y: hidden;
         align-self: center !important;
     }
@@ -168,7 +168,7 @@
     }
 
     .hdr-slide{
-        width: 30% !important;
+        width: 20% !important;
     }
 
 
@@ -204,7 +204,7 @@
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 43vh;
+        height: 40vh;
         overflow-y: hidden;
         align-self: end !important;
     }
@@ -553,8 +553,9 @@
     }
 
     .gallery-devs{
-        height: auto;
-        margin: 0;
+        min-height: 100vh;
+        height: 160vh !important;
+       /*  margin: 3rem 0; */
     }
     .gallery .gallery-img .prop-img-descr{
         height: 30%;
@@ -600,6 +601,7 @@
             "id-text"
             ". "
             "id-img";
+            min-height: 100vh;
         height: auto;
         overflow: hidden;
     }
