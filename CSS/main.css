@@ -58,6 +58,7 @@ header .unq_logo_m,  header .unq_logo_m img{
 .front-page{
     min-height: 130vh !important;
     width: 100% !important;
+    margin-bottom: 6rem;
     /*background: url("./IMG/mikail-mcverry.png");*/
     background: linear-gradient(to top, transparent, #4c5872),
     url("../IMG/mikail-mcverry.png");
@@ -229,9 +230,10 @@ header div a:nth-child(2), :nth-child(3){
 
 .prop-gallery{
     display: grid;
-    height: 450px !important;
+    min-height: 500px;
+    height: 500px !important;
     grid-template-columns: 1fr 1fr;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     margin: 3rem 0;
 }
 
@@ -456,7 +458,7 @@ header div a:nth-child(2), :nth-child(3){
     grid-template-rows: 1fr 4fr;
     height: 800px;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .grid-g-devs{
     width: 80%;

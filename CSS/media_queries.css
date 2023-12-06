@@ -38,9 +38,11 @@
 
     .prop-gallery{
         min-height: 70vh !important;
+        margin-bottom: 4rem ;
     }
     .prop-gallery .btn-view-all{
-        width: 8rem;    }
+        width: 8rem;    
+    }
     .btn-view-all::before{
         content: 'View more' !important;
     }
@@ -76,13 +78,13 @@
     
     .gallery-devs{
         min-height: 100vh;
-        height: 160vh !important;
+        height: 110vh !important;
     }
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        min-height: 85vh !important;
-        height: 85vh !important;
+        min-height: 75vh !important;
+        height: 75vh !important;
         overflow-y: hidden;
         align-self: center !important;
     }
@@ -169,6 +171,10 @@
         width: 30% !important;
     }
 
+
+    .prop-gallery{
+        margin-bottom: 6rem;
+    }
     .prop-gallery .pr-buttons, .intdes-text .g-buttons-id{
         display: none !important;
     }
