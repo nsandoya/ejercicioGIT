@@ -554,7 +554,8 @@
 
     .gallery-devs{
         min-height: 100vh;
-        height: 160vh !important;
+        height: 130vh !important;
+        margin-bottom: 6rem;
        /*  margin: 3rem 0; */
     }
     .gallery .gallery-img .prop-img-descr{
@@ -601,7 +602,7 @@
             "id-text"
             ". "
             "id-img";
-            min-height: 100vh;
+        min-height: 90vh;
         height: auto;
         overflow: hidden;
     }
@@ -618,7 +619,7 @@
     }
 
     .intdes-text .id-unq-decor{
-        width: 95%;
+        width: 90%;
         height: 40%;
         margin-left: 1.5rem;
         align-self: end !important;
