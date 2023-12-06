@@ -199,7 +199,7 @@
     }
 
     .gallery-devs{
-        height: 70vh;
+        height: 100vh;
     }
     .gallery-devs .grid-g-devs{
         grid-template-columns: repeat(3, 1fr);
@@ -553,15 +553,16 @@
     }
 
     .gallery-devs{
-        min-height: 100vh;
-        height: 160vh !important;
-       /*  margin: 3rem 0; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 100px;
+        min-height: 110vh;
+        height: 130vh !important;
+        margin-bottom: 6rem;
     }
     .gallery .gallery-img .prop-img-descr{
         height: 30%;
     }
-
-
 
     .g-main-title, .g-main-title h3{
         justify-self: left;
@@ -570,7 +571,12 @@
     .g-main-title{
         /* margin-left: 1.5rem; */
         line-height: 2.2rem;
-        margin: 0 1.5rem;
+        margin: 1.5rem 1.5rem;
+        align-self: end !important;
+    }
+    .gallery-devs .btn-g-grid{
+        margin-top: 3rem;
+        align-self: center;
     }
 
     .grid-g-devs{
@@ -581,6 +587,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
+        height: 110vh;
     }
     .grid-m-devs .g-devs-img{
         background-size: cover;
@@ -591,6 +598,9 @@
     .grid-m-devs .g-devs-title{
         margin: 1.5rem 2rem;
     }
+    /* .gallery-devs .btn-grid{
+        margin-bottom: 3rem;
+    } */
 
 
     .int-des{
@@ -598,11 +608,12 @@
         grid-template-columns: 1fr !important;
         /* grid-template-rows: 50vh 30px 1fr !important; */
         grid-template-areas: 
+            /* "." */
             "id-text"
-            ". "
             "id-img";
-            min-height: 100vh;
-        height: auto;
+        grid-template-rows: /* 10vh */ 50vh 60vh;
+        min-height: 110vh;
+        height: 110vh;
         overflow: hidden;
     }
 
@@ -612,13 +623,17 @@
         /* grid-template-rows: 60px 70vh 50px; */
         align-items: start;
         justify-items: left;
-        height: 80vh;
+        align-self: start;
+        height: 55vh;
         grid-area: id-text;
         grid-column: 1/2 !important;
+        position: static;
+        /* position: relative;
+        top: 12rem; */
     }
 
     .intdes-text .id-unq-decor{
-        width: 95%;
+        width: 85%;
         height: 40%;
         margin-left: 1.5rem;
         align-self: end !important;
@@ -627,8 +642,8 @@
     .intdes-text .id-txt{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 40px 1fr 2fr;
-        width: 80%;
+        grid-template-rows: 1fr 1fr 2fr;
+        width: 70%;
         margin: 0 auto;
         text-align: left;
         /* margin-inline: 1.5rem; */
@@ -638,16 +653,17 @@
     .intdes-text .pr-link{
         position: relative;
         justify-self: start;
-        left: 25px !important;
+        left: 3rem !important;
         top: -3rem !important;
     }
 
     .intdes-bg-img{
         grid-area: id-img;
         width: 80%;
+        height: 50vh;
         position: relative !important;
         left: -2rem !important;
-        top: -5rem;
+        top: 0;
         margin: 0 auto;
     }
     .intdes-bg-img .intdes-img{
