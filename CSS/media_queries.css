@@ -589,7 +589,7 @@
     .int-des{
         display: grid;
         grid-template-columns: 1fr !important;
-        grid-template-rows: 50vh 30px 1fr !important;
+        /* grid-template-rows: 50vh 30px 1fr !important; */
         grid-template-areas: 
             "id-text"
             ". "
@@ -604,7 +604,7 @@
         /* grid-template-rows: 60px 70vh 50px; */
         align-items: start;
         justify-items: left;
-        height: 50vh;
+        height: 80vh;
         grid-area: id-text;
         grid-column: 1/2 !important;
     }
@@ -639,7 +639,7 @@
         width: 80%;
         position: relative !important;
         left: -2rem !important;
-        top: -3rem;
+        top: -5rem;
         margin: 0 auto;
     }
     .intdes-bg-img .intdes-img{
