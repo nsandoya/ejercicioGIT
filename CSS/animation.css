@@ -1,3 +1,4 @@
+
 .prop-gallery .gallery .gal-cont .gallery-img:hover .prop-img-descr{
     font-family: 'Cormorant Garamond', serif;
     width: 100%;
@@ -32,6 +33,20 @@
     box-shadow: 0.2rem 0.2rem 1rem #c9d2e0;
     transition: all 0.4s ease-in-out;
 
+}
+
+@media (max-width: 640px){
+    .prop-gallery .gallery .gal-cont .gallery-img:hover .prop-img-descr{
+        font-family: 'Cormorant Garamond', serif;
+        width: 100%;
+        height: 30%;
+    }
+    .g-devs-item:hover{
+        transform: translateY(-10px);
+        box-shadow: 0.2rem 0.2rem 1rem #c9d2e0;
+        transition: all 0.4s ease-in-out;
+    
+    }
 }
 
 
