@@ -11,7 +11,7 @@
     vertical-align: baseline;
 }
 main, section{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     width: 100vw;
     max-width: 100vw;
     display: block;
@@ -19,6 +19,7 @@ main, section{
 
 html {
     box-sizing: border-box !important;
+    overflow-x: hidden;
   }
   *, *:before, *:after {
     box-sizing: inherit !important;
@@ -55,9 +56,50 @@ header .unq_logo_m,  header .unq_logo_m img{
     display: none;
 }
 
+.as-main{
+    position: fixed;
+    /* width: auto;*/
+    height: auto;
+    display: flex;
+    writing-mode: vertical-lr;
+    z-index: 1;
+    justify-content: space-evenly;
+    top: 42%;
+    left: 1%;
+/*     flex-direction: column; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); */
+}
+
+.as-main > div, aside svg, aside > p{
+    margin: 5px 0;
+}
+
+.as-main svg{
+    margin-left: 5px;
+}
+
+.as-main div{
+    width: 1px;
+    height: 5rem;
+    border-right: 1px solid #7E7E7E;
+    align-self: center;
+}
+.as-main p{
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    color: #7E7E7E;
+
+    /* transform: rotate(90deg); */
+}
+
 .front-page{
-    min-height: 130vh !important;
+    min-height: 100vh !important;
     width: 100% !important;
+    max-width: 100vw;
     margin-bottom: 6rem;
     /*background: url("./IMG/mikail-mcverry.png");*/
     background: linear-gradient(to top, transparent, #4c5872),
@@ -69,7 +111,7 @@ header .unq_logo_m,  header .unq_logo_m img{
     grid-template-rows: 5fr 5fr;
     font-family: 'Cabin', sans-serif;
 
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 .navbar{
     /*display: flex;
@@ -154,7 +196,8 @@ header div a:nth-child(2), :nth-child(3){
 
 .search{
     grid-area: search;
-    width: 310px;
+    min-width: 310px;
+    width: 330px;
     padding: 0.8rem 2rem;
     background-color: transparent;
     font-family: 'Cabin', sans-serif;
@@ -179,13 +222,14 @@ header div a:nth-child(2), :nth-child(3){
 
 .hdr-title{
     align-self: start;
-    margin-left: 3rem;
-    margin-top: 4rem;
+    /* margin-left: 3rem; */
+    /* margin-top: 4rem; */
     font-size: 2rem;
     font-weight:lighter;
     font-family: 'Cormorant Garamond', serif;
     position: relative;
     top: 7rem;
+    left: 5rem;
 }
 
 .front-page h1{
@@ -284,6 +328,7 @@ header div a:nth-child(2), :nth-child(3){
     font-size: 3.5rem;
     text-align: right;
     line-height: 3rem;
+    color: black !important;
 
 }
 
@@ -416,7 +461,6 @@ header div a:nth-child(2), :nth-child(3){
 .prop-gallery .prop-img-descr h4, span, p{
     /* color: #26282B !important;  */
     color: whitesmoke;
-    text-shadow: 0.1rem 0 #26282B 0.1rem;
 }
 
 .prop-gallery .prop-img-descr p svg{
@@ -429,6 +473,8 @@ header div a:nth-child(2), :nth-child(3){
 
 .prop-gallery .prop-img-descr h4{
     font-size: 1.5rem;
+    /* text-shadow: 1px 1px 5px gray; */
+
 }
 
 
@@ -712,6 +758,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     max-width: 100vw;
+    width: 100vw;
     height: 20rem;
 
     align-items: end;
@@ -754,12 +801,18 @@ footer > h4 span{
 
 }
 
+.as-footer{
+    display: none;
+}
+
 .copyright{
+    max-width: 100vw;
+    width: 100vw;
     display: grid;
     background-color: black;
     border-top: 1px solid whitesmoke;
     padding: 0.8rem 0;
-    min-width: 100vw;
+    /* min-width: 100vw; */
 }
 
 .copyright span{
