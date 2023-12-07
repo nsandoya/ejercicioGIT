@@ -344,7 +344,7 @@
         align-items: center;
         width: 40%;
         height: 100%;
-        margin-left: 8%;
+        margin-left: 5%;
         
     }
     .as-footer a{
@@ -729,6 +729,8 @@
     }
 
     .as-footer{
+        min-width: 70%;
+        height: 100%;
         justify-content: flex-start;
     }
 
