@@ -160,6 +160,7 @@ header div a:nth-child(2), :nth-child(3){
     font-family: 'Cabin', sans-serif;
     border: 1px solid white;
     border-radius: 25px;
+    color: white;
 }
 
 .search::placeholder{
@@ -218,11 +219,6 @@ header div a:nth-child(2), :nth-child(3){
     margin: 0 1.5rem 0 0;
 }
 
-.h-view-button:hover{
-    background-color: white;
-    color: #26282B;
-}
-
 .hdr-slide{
     display: none;
 }
@@ -264,7 +260,7 @@ header div a:nth-child(2), :nth-child(3){
         
 .gallery-img{
     width: 250px;
-    height: 85%;
+    height: 75%;
     display: grid;
     background-size:cover;
     background-position: center;
@@ -343,6 +339,7 @@ header div a:nth-child(2), :nth-child(3){
     grid-template-columns: repeat(3, 1fr);
     align-self: center;
     /* margin-bottom: 3rem; */
+    margin-bottom: 3rem;
     margin-left: 3rem;
 }
 
@@ -398,23 +395,32 @@ header div a:nth-child(2), :nth-child(3){
 }
 
 .prop-img-descr{
+    display: none;
     /*background-color: whitesmoke;*/
     font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Cabin', sans-serif; */
     width: 100%;
     height: 20%;
     display: grid;
     align-self: end;
     align-content: center;
     grid-auto-rows: 0fr;
+    /* background-color: rgba(75, 87, 113, 50%); */
 
-    background-color: whitesmoke;
-
+    /* background-color: whitesmoke; */
+    padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
 
 .prop-gallery .prop-img-descr h4, span, p{
-    color: #26282B !important;
+    /* color: #26282B !important;  */
+    color: whitesmoke;
+    text-shadow: 0.1rem 0 #26282B 0.1rem;
+}
+
+.prop-gallery .prop-img-descr p svg{
+    display: none;
 }
 
 .prop-gallery .prop-img-descr p{
@@ -468,6 +474,7 @@ header div a:nth-child(2), :nth-child(3){
     gap: 0.5rem;
     justify-items: center;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 .g-devs-item{

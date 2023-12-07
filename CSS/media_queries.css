@@ -84,7 +84,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         min-height: 70vh !important;
-        height: 70vh !important;
+        height: 75vh !important;
         overflow-y: hidden;
         align-self: center !important;
     }
@@ -462,7 +462,7 @@
     }
 
     .h-view-button{
-        width: 22rem;
+        width: 20rem;
     }
 
     .hdr-slide{
@@ -592,7 +592,8 @@
     .grid-m-devs .g-devs-img{
         background-size: cover;
         background-position: center;
-        background-position-y: -270px;
+        background-repeat: no-repeat;
+        background-position-y: -160px;
         height: 180px !important;
     }
     .grid-m-devs .g-devs-title{

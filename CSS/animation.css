@@ -1,0 +1,59 @@
+.prop-gallery .gallery .gal-cont .gallery-img:hover .prop-img-descr{
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+    height: 20%;
+    display: grid;
+    align-self: end;
+    align-content: center;
+    grid-auto-rows: 0fr;
+    background-color: whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+    transition: all 0.4s;
+
+}
+
+.prop-gallery .gallery-img:hover h4, p, span{
+    color: #26282B ;
+    transition: all 0.5s;
+
+}
+
+.prop-gallery .gallery-img:hover .prop-img-descr p svg{
+    display: inline-block;
+    transition: display 0.7s ease-in-out;
+
+}
+
+.g-devs-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0.2rem 0.2rem 1rem #c9d2e0;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+.h-view-button:hover{
+    background-color: white;
+    color: #26282B;
+    border: none;
+
+    transition: all 0.4s;
+    /* transition: color 0.3s;
+    transition: border 0.3s; */
+}
+.btn-view-all:hover, .btn-contact-us:hover{
+    background-color: #26282B;
+    color: white;
+    transition: all 0.4s;
+
+}
+.join-btn:hover{
+    background-color: white;
+    color: #26282B !important;
+    border: 1px solid white !important;
+    transition: all 0.4s;
+
+}
